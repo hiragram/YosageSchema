@@ -20,10 +20,20 @@
 		8A1C25B82166301A004D920B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C25B72166301A004D920B /* Error.swift */; };
 		8A1C25BA216631F8004D920B /* StorageProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C25B9216631F8004D920B /* StorageProxy.swift */; };
 		8A1C25BC21664DE4004D920B /* ViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C25BB21664DE4004D920B /* ViewController+UITextFieldDelegate.swift */; };
+		8AB2FC6B2166E5980034028C /* YosageSchemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2FC6A2166E5980034028C /* YosageSchemaTests.swift */; };
+		8AB2FC6D2166E5980034028C /* YosageSchema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1C258C21662CE0004D920B /* YosageSchema.framework */; };
+		8AB2FC742166E5AD0034028C /* StoredElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2FC732166E5AD0034028C /* StoredElementTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8A1C25B321662D52004D920B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A1C258321662CE0004D920B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1C258B21662CE0004D920B;
+			remoteInfo = YosageSchema;
+		};
+		8AB2FC6E2166E5980034028C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A1C258321662CE0004D920B /* Project object */;
 			proxyType = 1;
@@ -50,6 +60,10 @@
 		8A1C25B72166301A004D920B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		8A1C25B9216631F8004D920B /* StorageProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProxy.swift; sourceTree = "<group>"; };
 		8A1C25BB21664DE4004D920B /* ViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		8AB2FC682166E5980034028C /* YosageSchemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YosageSchemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB2FC6A2166E5980034028C /* YosageSchemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YosageSchemaTests.swift; sourceTree = "<group>"; };
+		8AB2FC6C2166E5980034028C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AB2FC732166E5AD0034028C /* StoredElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredElementTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8AB2FC652166E5980034028C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB2FC6D2166E5980034028C /* YosageSchema.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +97,7 @@
 			children = (
 				8A1C258E21662CE0004D920B /* YosageSchema */,
 				8A1C25A021662D36004D920B /* Sample */,
+				8AB2FC692166E5980034028C /* YosageSchemaTests */,
 				8A1C258D21662CE0004D920B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +107,7 @@
 			children = (
 				8A1C258C21662CE0004D920B /* YosageSchema.framework */,
 				8A1C259F21662D36004D920B /* Sample.app */,
+				8AB2FC682166E5980034028C /* YosageSchemaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +139,16 @@
 				8A1C25B121662D46004D920B /* Schema.swift */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		8AB2FC692166E5980034028C /* YosageSchemaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2FC6A2166E5980034028C /* YosageSchemaTests.swift */,
+				8AB2FC732166E5AD0034028C /* StoredElementTests.swift */,
+				8AB2FC6C2166E5980034028C /* Info.plist */,
+			);
+			path = YosageSchemaTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +201,24 @@
 			productReference = 8A1C259F21662D36004D920B /* Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8AB2FC672166E5980034028C /* YosageSchemaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AB2FC722166E5980034028C /* Build configuration list for PBXNativeTarget "YosageSchemaTests" */;
+			buildPhases = (
+				8AB2FC642166E5980034028C /* Sources */,
+				8AB2FC652166E5980034028C /* Frameworks */,
+				8AB2FC662166E5980034028C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AB2FC6F2166E5980034028C /* PBXTargetDependency */,
+			);
+			name = YosageSchemaTests;
+			productName = YosageSchemaTests;
+			productReference = 8AB2FC682166E5980034028C /* YosageSchemaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +234,9 @@
 						LastSwiftMigration = 1000;
 					};
 					8A1C259E21662D36004D920B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8AB2FC672166E5980034028C = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -201,6 +256,7 @@
 			targets = (
 				8A1C258B21662CE0004D920B /* YosageSchema */,
 				8A1C259E21662D36004D920B /* Sample */,
+				8AB2FC672166E5980034028C /* YosageSchemaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +276,13 @@
 				8A1C25AC21662D38004D920B /* LaunchScreen.storyboard in Resources */,
 				8A1C25A921662D38004D920B /* Assets.xcassets in Resources */,
 				8A1C25A721662D36004D920B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB2FC662166E5980034028C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +312,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8AB2FC642166E5980034028C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB2FC6B2166E5980034028C /* YosageSchemaTests.swift in Sources */,
+				8AB2FC742166E5AD0034028C /* StoredElementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -256,6 +328,11 @@
 			isa = PBXTargetDependency;
 			target = 8A1C258B21662CE0004D920B /* YosageSchema */;
 			targetProxy = 8A1C25B321662D52004D920B /* PBXContainerItemProxy */;
+		};
+		8AB2FC6F2166E5980034028C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1C258B21662CE0004D920B /* YosageSchema */;
+			targetProxy = 8AB2FC6E2166E5980034028C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,6 +563,40 @@
 			};
 			name = Release;
 		};
+		8AB2FC702166E5980034028C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YosageSchemaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yura.YosageSchemaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AB2FC712166E5980034028C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YosageSchemaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yura.YosageSchemaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +623,15 @@
 			buildConfigurations = (
 				8A1C25AF21662D38004D920B /* Debug */,
 				8A1C25B021662D38004D920B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AB2FC722166E5980034028C /* Build configuration list for PBXNativeTarget "YosageSchemaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AB2FC702166E5980034028C /* Debug */,
+				8AB2FC712166E5980034028C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

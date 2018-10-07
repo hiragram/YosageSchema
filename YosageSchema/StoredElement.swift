@@ -64,10 +64,19 @@ public enum StoredElement<T: Codable>: Codable {
             return nil
         }
     }
+
+    var optionalValue: T? {
+        switch self {
+        case .some(let value):
+            return value
+        case .none, .notSet:
+            return nil
+        }
+    }
 }
 
-extension StoredElement where T: Equatable {
-    static func == (lhs: StoredElement<T>, rhs: StoredElement<T>) -> Bool {
+extension StoredElement: Equatable where T: Equatable {
+    public static func == (lhs: StoredElement<T>, rhs: StoredElement<T>) -> Bool {
         switch (lhs, rhs) {
         case (.some(let l), .some(let r)):
             return l == r
